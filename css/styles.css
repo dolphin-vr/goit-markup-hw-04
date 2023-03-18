@@ -331,6 +331,8 @@ p {
     width: calc((100% - 72px) / 4);
     padding-bottom: 32px;
     background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team> .item img {
@@ -376,14 +378,18 @@ p {
 }
 .customers .link{
     display: inline-block;
-     padding: 16px 32px;
+    padding: 16px 32px;
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
+    fill: var(--subtle-text);
+}
+.customers .link:hover, .customers .link:focus{
+    fill: var(--press-state);
+    border-color: var(--press-state);
 }
 .customers .icon{
     width: 104px;
-    height: 56px;
-   
+    height: 56px;   
 }
 
 /* ======= FOOTER ======= */
@@ -460,6 +466,7 @@ p {
 .radio-btn:focus {
     color: #ffffff;
     background-color: var(--press-state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-list{
@@ -478,4 +485,7 @@ p {
     padding: 32px 16px;
     border: 1px solid var(--accent);
     border-top: none;
+}
+.project:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
